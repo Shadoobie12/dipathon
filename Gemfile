@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem "sqlite3", "~> 1.3.9"
-gem 'sinatra', '1.1.0'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
