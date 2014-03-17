@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Dip-a-thon</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar">
+			<div class="navbar-inner">
+				<div class= "container" <%yield %> >
+					<ul class="nav">
+				     <li> <%= link_to "Home", root_path(@browse)%> </li>
+					 <li> <%= link_to "About", browse_about_path(@browse) %> </li>
+					 <li> <%= link_to  "New Team!!", new_team_path(@team)%> </li>
+					 <li> <%= link_to "See all the teams", teams_path(@team)%> </li>
+
+                    <li> <% link_to "Home", root_path %> </li>
+						</div>
+						</div>
+						</div>
+	
+
+<%= yield %>
+
+
+
+</body>
+</html>

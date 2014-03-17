@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+
+  <div class="container"> 
+	<div class="hero-unit">
+  <h2> The dip-a-thon-team formally known as.. </h2>
+ <h2>  <%= @team.name %> </h2>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div clas="span4">
+<h3> The first crazy member!!</h3>
+<h1> <%= @team.member_1 %> </h1>
+</div>
+</div>
+
+
+<div class="row">
+<div clas="span6">
+<h3> The Second awesome member!!</h3>
+<h1> <%= @team.member_2 %> </h1>
+</div>
+</div>
+</div>
+
+           
+             
+
+ 
+
+<%= link_to 'Check out the rest of the competition!!', teams_path, :class => 'btn btn-large btn-success'   %> 

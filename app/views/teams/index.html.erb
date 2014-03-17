@@ -1,0 +1,32 @@
+<h1 class="text-right"> Meet the Dip-A-Thon teams!!</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Member 1</th>
+      <th>Member 2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= team.name %></td>
+        <td><%= team.member_1 %></td>
+        <td><%= team.member_2 %></td>
+        <td><%= link_to 'Show', team %></td>
+        
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</table>
+
+<br>
+
+<%= link_to 'Sign up a new team!!', new_team_path, :class=> 'btn btn-large btn-warning'%>
