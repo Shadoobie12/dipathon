@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Di::Application.load_tasks
+RubyRails4Sample::Application.load_tasks
